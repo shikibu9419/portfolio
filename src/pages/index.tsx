@@ -1,13 +1,13 @@
 import React from 'react';
-import { AnyImage, SEO } from 'src/components';
+import { SEO } from 'src/components';
 import { baseStyle } from 'src/styles';
+import TopMDX from 'src/internal/top.mdx';
 
 import styled from '@emotion/styled';
 
 const Component: React.FCX = ({ className }) => (
   <main className={className}>
-    <h1>this is Component page!</h1>
-    <AnyImage filename='banner.png' />
+    <TopMDX />
   </main>
 );
 
