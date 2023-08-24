@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BibList from '../components/BibList';
+
 ---
 
 <!DOCTYPE html>
@@ -21,33 +23,42 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				プログラマとしての活動を通し，より高度なヒトと計算機の対話を目指すHuman Computer Interaction（HCI）分野に興味を持つ．現在はヒトの視線に着目し，「視覚をベースとしたヒトとヒト，ヒトと計算機の対話はどこまで拡張できるか」を主題として，ビデオ会議におけるアイコンタクトの最適化，健常者や身体的に制約がある人のための視線によるインタラクションなどの研究を行っている．
 			</p>
 
-			<h2>Education</h2>
+			<h2>学歴</h2>
 
 			<dl>
 				<dt>2022 - </dt>
 				<dd>博士前期課程 在籍（2023.10- 休学中）</dd>
 				<dd>筑波大学 人間総合科学学術院人間総合科学研究群</dd>
+				<dd><a href="https://digitalnature.slis.tsukuba.ac.jp/">デジタルネイチャー研究室</a>（指導教員：落合陽一准教授）</dd>
 			</dl>
 			<dl>
 				<dt>2020 - 2022</dt>
 				<dd>学士（情報メディア科学）</dd>
 				<dd>筑波大学 情報学群情報メディア創成学類</dd>
+				<dd><a href="https://digitalnature.slis.tsukuba.ac.jp/">デジタルネイチャー研究室</a>（指導教員：落合陽一准教授）</dd>
 			</dl>
 			<dl>
 				<dt>2015 - 2020</dt>
 				<dd>準学士</dd>
 				<dd>明石工業高等専門学校 電子情報工学科</dd>
+				<dd>佐村研究室→井上研究室（指導教員：井上一成教授）</dd>
 			</dl>
 
-			<h2>Work</h2>
+			<h2>職歴</h2>
 			<dl>
-				<dt>2020 -</dt>
-				<dd><a href="https://digitalnature.slis.tsukuba.ac.jp/">デジタルネイチャー研究室</a></dd>
-				<dd>Eye Interactionの研究</dd>
+				<dt>2021 - 現在</dt>
+				<dd>フリーランスエンジニア</dd>
+				<dd>Webアプリを始めとした受託開発</dd>
 			</dl>
 			<dl>
-				<dt>2021 -</dt>
-				<dd>フリーランスエンジニア</dd>
+				<dt>2020</dt>
+				<dd><a href="https://corp.freee.co.jp/">freee株式会社</a></dd>
+				<dd>短期インターンシップ・Ruby on Rails / Reactアプリの機能追加・改善</dd>
+			</dl>
+			<dl>
+				<dt>2018</dt>
+				<dd><a href="https://wantedlyinc.com">ウォンテッドリー株式会社</a></dd>
+				<dd>短期インターンシップ・Ruby on RailsでのgRPCベースライブラリ開発</dd>
 			</dl>
 			<dl>
 				<dt>2018 - 2021</dt>
@@ -55,20 +66,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<dd>バックエンド（Ruby on Rails，NestJS）/フロントエンド（Angular，React）エンジニア，プロジェクトマネージャー，アーキテクト</dd>
 			</dl>
 
-			<h2>Awards</h2>
+			<h2>受賞・表彰</h2>
 
 			<dl>
 				<dt>2021.11</dt>
 				<dd>ゆる楽器ハッカソン2021 優秀賞</dd>
 
-				<dt>2020.1</dt>
+				<dt>2020.10</dt>
 				<dd>Civictech Challenge Cup U-22 アカツキスポンサー賞</dd>
 
-				<dt>2019.1</dt>
+				<dt>2019.01</dt>
 				<dd>TRUNK HACKATHON in Osaka サイボウズ株式会社スポンサー賞</dd>
 			</dl>
 
-			<h2>Grants</h2>
+			<h2>研究助成</h2>
 
 			<dl>
 				<dt>2023.06 - 2024.03</dt>
@@ -80,7 +91,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<dd><a href="https://www.jst.go.jp/kisoken/aip/program/wakate/challenge/list2022.html">AIPチャレンジプログラム</a>. AIPネットワークラボ, 国立研究開発法人 科学技術振興機構. ¥1,000,000.</dd>
 			</dl>
 
-			<h2>Publications</h2>
+			<h2>出版</h2>
 
 			<ul>
 				<li>Chinatsu Ozawa, Kenta Yamamoto, <b>Kazuya Izumi</b>, and Yoichi Ochiai. 2023. Give Life Back to Alternative Process: Exploring Handmade Photographic Printing Experiments towards Digital Nature Ecosystem. In ACM SIGGRAPH 2023 Labs (SIGGRAPH '23). Association for Computing Machinery, New York, NY, USA, Article 6, 1–2. https://doi.org/10.1145/3588029.3599735</li>
@@ -89,6 +100,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<li>Chinatsu Ozawa, Kenta Yamamoto, <b>Kazuya Izumi</b>, and Yoichi Ochiai. 2022. Computational Alternative Photographic Process toward Sustainable Printing. In SIGGRAPH Asia 2022 Technical Communications (SA ’22 Technical Communications), December 6–9, 2022, Daegu, Republic of Korea. ACM, New York, NY, USA, 4 pages. https://doi.org/10.1145/3550340.3564219</li>
 				<li>Ryogo Niwa, <b>Kazuya Izumi</b>, Shieru Suzuki, Yoichi Ochiai. 2022. EMS-Supported Throwing: Preliminary Investigation on EMS-Supported Training of Movement Form. In: Antona, M., Stephanidis, C. (eds) Universal Access in Human-Computer Interaction. Novel Design Approaches and Technologies. HCII 2022. Lecture Notes in Computer Science, vol 13308. Springer, Cham. https://doi.org/10.1007/978-3-031-05028-2_31</li>
 				<li><b>泉和哉</b>, 吉武大地, 佐村敏治. 2019. "キーストローク認証におけるk-meansを用いたウルフ攻撃", 2019年 情報科学技術フォーラム(FIT), pp.17-20.</li>
+			</ul>
+
+			<h2>メディア出演・掲載</h2>
+
+			<ul>
+				<li><a href="https://audee.jp/voice/show/55523">FUTURES 落合陽一 RADIO PIXIE DUST. JFN系. 2023-02-06</a></li>
 			</ul>
 		</main>
 		<Footer />
