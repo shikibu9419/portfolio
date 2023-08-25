@@ -25,7 +25,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.5;
 }
 main {
@@ -119,6 +119,14 @@ hr {
 	main {
 		padding: 1rem;
 	}
+}
+
+dt:not(:first-child) {
+	margin-top: 0.4rem;
+}
+
+li:not(:last-child) {
+	margin-bottom: 0.4rem;
 }
 
 .sr-only {
