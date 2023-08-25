@@ -1,40 +1,40 @@
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/tremplates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Sans+JP:wght@400&display=swap');
 
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
+	--black: 30, 30, 30;
+	--gray-dark: 80, 80, 80;
+	--gray: 120, 120, 120;
+	--gray-light: 230, 230, 230;
+
 	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
 }
 body {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Inter', 'Noto Sans JP', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
-	line-height: 1.7;
+	line-height: 1.5;
 }
 main {
 	width: 720px;
-	max-width: calc(100% - 2em);
+	max-width: calc(100% - 2rem);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 3rem 1rem;
 }
+
 h1,
 h2,
 h3,
@@ -46,35 +46,34 @@ h6 {
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+	font-size: 1.6rem;
 }
 h2 {
-	font-size: 2.441em;
+	font-size: 1.2rem;
 }
 h3 {
-	font-size: 1.953em;
+	font-size: 1.0rem;
 }
 h4 {
-	font-size: 1.563em;
 }
 h5 {
-	font-size: 1.25em;
 }
+
 strong,
 b {
-	font-weight: 700;
+	font-weight: 600;
 }
 a {
-	color: var(--accent);
+	color: rgb(var(--gray));
 }
 a:hover {
-	color: var(--accent);
+	color: rgb(var(--gray));
 }
 p {
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 }
 .prose p {
-	margin-bottom: 2em;
+	margin-bottom: 2rem;
 }
 textarea {
 	width: 100%;
@@ -97,7 +96,7 @@ code {
 	border-radius: 2px;
 }
 pre {
-	padding: 1.5em;
+	padding: 1.5rem;
 	border-radius: 8px;
 }
 pre > code {
@@ -107,7 +106,7 @@ blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
 	margin: 0px;
-	font-size: 1.333em;
+	font-size: 1.333rem;
 }
 hr {
 	border: none;
@@ -118,7 +117,7 @@ hr {
 		font-size: 18px;
 	}
 	main {
-		padding: 1em;
+		padding: 1rem;
 	}
 }
 

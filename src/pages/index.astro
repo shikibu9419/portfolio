@@ -3,22 +3,21 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import BibList from '../components/BibList';
 
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
+
 		<main>
 			<h1>泉 和哉</h1>
 			<p>
-				Webが主戦場のプログラマ．インターンシップ・アルバイト先ではバックエンド/フロントエンドプログラマ，アーキテクト，プロジェクトマネージャなどあらゆる立場でアプリ開発に貢献．現在は学業・研究活動の傍らフリーランスエンジニアとして活動中．インターン中はRuby on Railsで開発を行っていたが，最近はRustやTypeScriptなどをよく使用している．
-				<br>
+				Webが主戦場のプログラマ．インターンシップ・アルバイト先ではバックエンド/フロントエンドプログラマ，アーキテクト，プロジェクトマネージャなどあらゆる立場でアプリ開発に貢献．現在は学業・研究活動の傍らフリーランスエンジニアとして活動中．最近はTypeScriptやRustをよく使用している．
 				<br>
 				プログラマとしての活動を通し，より高度なヒトと計算機の対話を目指すHuman Computer Interaction（HCI）分野に興味を持つ．現在はヒトの視線に着目し，「視覚をベースとしたヒトとヒト，ヒトと計算機の対話はどこまで拡張できるか」を主題として，ビデオ会議におけるアイコンタクトの最適化，健常者や身体的に制約がある人のための視線によるインタラクションなどの研究を行っている．
 			</p>
@@ -27,7 +26,7 @@ import BibList from '../components/BibList';
 
 			<dl>
 				<dt>2022 - </dt>
-				<dd>博士前期課程 在籍（2023.10- 休学中）</dd>
+				<dd>博士前期課程 在籍（2023.10 - 休学中）</dd>
 				<dd>筑波大学 人間総合科学学術院人間総合科学研究群</dd>
 				<dd><a href="https://digitalnature.slis.tsukuba.ac.jp/">デジタルネイチャー研究室</a>（指導教員：落合陽一准教授）</dd>
 			</dl>
@@ -41,7 +40,7 @@ import BibList from '../components/BibList';
 				<dt>2015 - 2020</dt>
 				<dd>準学士</dd>
 				<dd>明石工業高等専門学校 電子情報工学科</dd>
-				<dd>佐村研究室→井上研究室（指導教員：井上一成教授）</dd>
+				<dd>井上研究室（指導教員：井上一成教授）</dd>
 			</dl>
 
 			<h2>職歴</h2>
@@ -63,7 +62,7 @@ import BibList from '../components/BibList';
 			<dl>
 				<dt>2018 - 2021</dt>
 				<dd><a href="https://twogate.com/">株式会社TwoGate</a></dd>
-				<dd>バックエンド（Ruby on Rails，NestJS）/フロントエンド（Angular，React）エンジニア，プロジェクトマネージャー，アーキテクト</dd>
+				<dd>長期インターンシップ・バックエンド（Ruby on Rails，NestJS）/フロントエンド（Angular，React）エンジニア，プロジェクトマネージャー，アーキテクト</dd>
 			</dl>
 
 			<h2>受賞・表彰</h2>
@@ -108,6 +107,7 @@ import BibList from '../components/BibList';
 				<li><a href="https://audee.jp/voice/show/55523">FUTURES 落合陽一 RADIO PIXIE DUST. JFN系. 2023-02-06</a></li>
 			</ul>
 		</main>
+
 		<Footer />
 	</body>
 </html>
