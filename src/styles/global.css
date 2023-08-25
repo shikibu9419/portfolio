@@ -125,6 +125,10 @@ dt:not(:first-child) {
 	margin-top: 0.4rem;
 }
 
+dd {
+	margin-top: 0.2rem;
+}
+
 li:not(:last-child) {
 	margin-bottom: 0.4rem;
 }
